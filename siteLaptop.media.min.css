@@ -1,0 +1,33 @@
+/*
+author: REX GOT CO.LTD
+Date: 2024-06-01
+LICENSE: MIT
+GITHUB:
+WEBSITE: https://www.rexgot.pro
+TELEGRAM: https://t.me/rexgotpro
+CONTACT: https://www.rexgot.pro/contact
+
+Responsive CSS for PC media queries 2 types
+*/
+
+:root{
+}
+
+/* Laptop / Desktop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1281px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
