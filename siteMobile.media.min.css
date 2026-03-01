@@ -1,2 +1,52 @@
+/*
+author: REX GOT CO.LTD
+Date: 2024-06-01
+LICENSE: MIT
+GITHUB:
+WEBSITE: https://www.rexgot.pro
+TELEGRAM: https://t.me/rexgotpro
+CONTACT: https://www.rexgot.pro/contact
+
+Responsive CSS for mobile media queries 4 types
+*/
+
 :root{
+}
+/* Mobile portrait */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/* Mobile Landscape */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/* Tablet portrait */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/* Tablet Landscape */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 }
