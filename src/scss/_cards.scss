@@ -1,0 +1,91 @@
+// ==========================================
+// 🃏 Card Component
+// ==========================================
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: $border-radius;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.15s ease-in-out;
+
+  > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  // Hover effect modifier
+  &.card-hover:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Card Body
+.card-body {
+  flex: 1 1 auto;
+  padding: $spacer;
+}
+
+// Card Title & Subtitle
+.card-title {
+  margin-bottom: ($spacer * 0.5);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $dark;
+}
+
+.card-subtitle {
+  margin-top: ($spacer * -0.25);
+  margin-bottom: ($spacer * 0.5);
+  font-size: 0.875rem;
+  color: $secondary;
+}
+
+// Card Text
+.card-text {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Card Header
+.card-header {
+  padding: ($spacer * 0.75) $spacer;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+  &:first-child {
+    border-radius: calc($border-radius - 1px) calc($border-radius - 1px) 0 0;
+  }
+}
+
+// Card Footer
+.card-footer {
+  padding: ($spacer * 0.75) $spacer;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+  &:last-child {
+    border-radius: 0 0 calc($border-radius - 1px) calc($border-radius - 1px);
+  }
+}
+
+// Card Image Caps
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc($border-radius - 1px);
+  border-top-right-radius: calc($border-radius - 1px);
+}
+
+.card-img-bottom {
+  width: 100%;
+  border-bottom-right-radius: calc($border-radius - 1px);
+  border-bottom-left-radius: calc($border-radius - 1px);
+}
