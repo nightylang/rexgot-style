@@ -19,5 +19,10 @@
     "postcss": "^8.4.0",
     "postcss-cli": "^11.0.0",
     "sass": "^1.70.0"
+  },
+  "scripts": {
+  "format": "prettier --write \"**/*.{html,js,json,md,cshtml,css,jsx,tsx,py,java}\"",
+  "lint:css": "stylelint \"src/scss/**/*.scss\"",
+  "lint:css:fix": "stylelint \"src/scss/**/*.scss\" --fix"
   }
 }
