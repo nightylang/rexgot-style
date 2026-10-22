@@ -1,0 +1,26 @@
+// ==========================================
+// ⚡ Utility Classes
+// ==========================================
+
+// Margin & Padding Helpers (e.g., .mt-3, .p-2, .m-auto)
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+    .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+    .#{$abbrev}t-#{$size} { #{$prop}-top: $length !important; }
+    .#{$abbrev}b-#{$size} { #{$prop}-bottom: $length !important; }
+    .#{$abbrev}l-#{$size} { #{$prop}-left: $length !important; }
+    .#{$abbrev}r-#{$size} { #{$prop}-right: $length !important; }
+  }
+}
+
+// Background & Text Colors
+@each $color, $value in $theme-colors {
+  .bg-#{$color} { background-color: $value !important; }
+  .text-#{$color} { color: $value !important; }
+}
+
+// Flexbox Utilities
+.d-flex { display: flex !important; }
+.justify-content-center { justify-content: center !important; }
+.justify-content-between { justify-content: space-between !important; }
+.align-items-center { align-items: center !important; }
