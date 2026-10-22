@@ -1,0 +1,47 @@
+// ==========================================
+// 📐 Responsive Grid & Layout
+// ==========================================
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1320px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+// 12-Column Grid
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: percentage($i / 12);
+  }
+}
+
+// Responsive Grid Media Queries
+@each $breakpoint, $value in $grid-breakpoints {
+  @media (min-width: $value) {
+    @for $i from 1 through 12 {
+      .col-#{$breakpoint}-#{$i} {
+        flex: 0 0 auto;
+        width: percentage($i / 12);
+      }
+    }
+  }
+}
