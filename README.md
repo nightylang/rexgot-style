@@ -61,4 +61,19 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
+---
 
+## For Dev maintenance 
+
+```bash
+npm install -D sass
+npm install -D postcss postcss-cli autoprefixer
+npm install --save-dev sass postcss postcss-cli autoprefixer esbuild npm-run-all
+npm install -D stylelint stylelint-config-recess-order
+npm install --save-dev prettier prettier-plugin-organize-attributes
+npm install --save-dev stylelint stylelint-config-standard-scss stylelint-config-recess-order
+
+
+```
+
+---
